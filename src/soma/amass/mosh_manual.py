@@ -36,8 +36,8 @@ from omegaconf import OmegaConf
 
 from moshpp.mosh_head import MoSh
 from moshpp.mosh_head import run_moshpp_once
-from soma.render.blender_tools import prepare_render_cfg
-from soma.render.blender_tools import render_mosh_once
+#from soma.render.blender_tools import prepare_render_cfg
+#from soma.render.blender_tools import render_mosh_once
 from soma.tools.parallel_tools import run_parallel_jobs
 
 
