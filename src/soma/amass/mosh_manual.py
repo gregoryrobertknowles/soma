@@ -39,6 +39,7 @@ from moshpp.mosh_head import run_moshpp_once
 #from soma.render.blender_tools import prepare_render_cfg
 #from soma.render.blender_tools import render_mosh_once
 from soma.tools.parallel_tools import run_parallel_jobs
+from moshpp.marker_layout.labels_map import general_labels_map
 
 
 def mosh_manual(
@@ -77,6 +78,7 @@ def mosh_manual(
         mosh_job = mosh_cfg.copy()
         mosh_job.update({
             'mocap.fname': mocap_fname,
+            'mocap.labels_map': general_labels_map,
         })
         if persubject_marker_layout:
             # todo: do we need to pick the mocaps to produce the layout here?
